@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Tortillería Peña</title>
+    <!-- Bootstrap v5.3.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome v6.6.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark menu sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tortillería Peña<small>Desde 1974</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-md-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina1.html">Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina2.html">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina3.html">Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="encabezado">
+        <div class="container">
+            <h1>Productos</h1>
+            <p class="mb-0">Todo lo que sale de nuestro molino, preparado el mismo día.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>En Tortillería Peña trabajamos principalmente con maíz, y de él salen casi todos nuestros productos. La
+                    masa se prepara cada mañana, por eso recomendamos comprar temprano si la quieres para tamales o para hacer
+                    tus propias tortillas en casa.</p>
+            </div>
+        </div>
+
+        <!-- Componente 1: Cards -->
+        <div class="row g-4 my-2">
+            <div class="col-md-4">
+                <div class="card tarjeta-producto h-100">
+                    <img src="img/producto1.jpg" class="card-img-top" alt="Tortilla de maíz">
+                    <div class="card-body">
+                        <h5 class="card-title">Tortilla de maíz <span class="badge bg-barro ms-1">El más pedido</span></h5>
+                        <p class="card-text">La de todos los días. Se vende por kilo, caliente y recién salida de la máquina.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button class="btn btn-maiz w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-producto="Tortilla de maíz" data-detalle="Es nuestro producto principal. Se hace todos los días con maíz nixtamalizado y se vende por kilo o medio kilo. Si la compras temprano te toca calientita.">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card tarjeta-producto h-100">
+                    <img src="img/producto2.jpg" class="card-img-top" alt="Totopos">
+                    <div class="card-body">
+                        <h5 class="card-title">Totopos</h5>
+                        <p class="card-text">Tortilla cortada en triángulos y dorada, perfecta para chilaquiles o para botanear con salsa.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button class="btn btn-maiz w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-producto="Totopos" data-detalle="Los totopos se preparan con tortilla del día anterior, se cortan en triángulos y se doran hasta que quedan crujientes. Se venden por bolsa.">Más información</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card tarjeta-producto h-100">
+                    <img src="img/producto3.jpg" class="card-img-top" alt="Masa">
+                    <div class="card-body">
+                        <h5 class="card-title">Masa</h5>
+                        <p class="card-text">Masa de maíz nixtamalizado para preparar tortillas en casa, gorditas, sopes o tamales.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 pb-3">
+                        <button class="btn btn-maiz w-100" data-bs-toggle="modal" data-bs-target="#modalProducto"
+                            data-producto="Masa" data-detalle="La masa se muele cada mañana. Se vende por kilo y es la misma que usamos para hacer nuestras tortillas. En temporada de tamales conviene apartarla con un día de anticipación.">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-lg-6">
+                <h2 class="titulo-seccion">¿Cómo se hace la tortilla?</h2>
+                <p>El maíz se cuece con agua y cal, y se deja reposar toda la noche. A este proceso se le llama
+                    nixtamalización y es lo que le da a la tortilla su sabor y su textura. Al día siguiente el maíz se lava
+                    y se muele en el molino hasta obtener la masa.</p>
+                <p>La masa pasa a la máquina tortilladora, que la aplana, la corta en círculos y la lleva por el comal
+                    para que se cueza de los dos lados. Al final la tortilla se enfría un poco, se cuenta por kilo y se
+                    empaca para venderse caliente en el mostrador o para el reparto.</p>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="titulo-seccion">Consejos para guardarla</h2>
+                <!-- Componente 2: List group -->
+                <ul class="list-group">
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-temperature-low fa-lg" style="color: var(--barro)"></i>
+                        Guárdala en el refrigerador dentro de una bolsa cerrada para que no se seque.
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-fire-burner fa-lg" style="color: var(--barro)"></i>
+                        Para recalentarla, ponla en el comal caliente unos segundos de cada lado.
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-calendar-day fa-lg" style="color: var(--barro)"></i>
+                        Lo ideal es consumirla en dos o tres días, porque no lleva conservadores.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Componente 3: Modal con el detalle del producto -->
+    <div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="tituloProducto" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloProducto">Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="detalleProducto" class="mb-0"></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="pagina3.html" class="btn btn-maiz">Hacer un pedido</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-5">
+        <div class="container d-md-flex justify-content-between text-center text-md-start">
+            <span><strong>Tortillería Peña</strong> &middot; Guadalupe, Nuevo León</span>
+            <span>Tortillas hechas a diario desde 1974</span>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap v5.3.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/pagina2.js"></script>
+</body>
+
+</html>

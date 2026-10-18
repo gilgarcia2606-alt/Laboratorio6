@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra historia | Tortillería Peña</title>
+    <!-- Bootstrap v5.3.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome v6.6.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark menu sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Tortillería Peña<small>Desde 1974</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-md-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina1.html">Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina2.html">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pagina3.html">Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="encabezado">
+        <div class="container">
+            <h1>Nuestra historia</h1>
+            <p class="mb-0">Más de cincuenta años haciendo tortillas para las familias de Guadalupe.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <!-- Componente 1: Carousel -->
+                <div id="carruselHistoria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselHistoria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                        <button type="button" data-bs-target="#carruselHistoria" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                        <button type="button" data-bs-target="#carruselHistoria" data-bs-slide-to="2" aria-label="Foto 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="img/historia1.jpg" class="d-block w-100" alt="Fachada de la tortillería en sus primeros años">
+                            <div class="carousel-caption">
+                                <p class="mb-0 text-center">Así se veía el local en sus primeros años.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="img/historia2.jpg" class="d-block w-100" alt="Tortillas haciéndose a mano en el comal">
+                            <div class="carousel-caption">
+                                <p class="mb-0 text-center">Al principio la tortilla se hacía a mano y se cocía en comal.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="img/historia3.jpg" class="d-block w-100" alt="Máquina tortilladora actual">
+                            <div class="carousel-caption">
+                                <p class="mb-0 text-center">Hoy la máquina tortilladora nos permite surtir a más clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselHistoria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselHistoria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="anio mb-2">1974</div>
+                <h2 class="titulo-seccion">Cómo empezó todo</h2>
+                <p>Tortillería Peña abrió sus puertas en 1974 en Guadalupe, Nuevo León, como un negocio familiar con
+                    una sola máquina y la idea de ofrecer tortilla fresca a los vecinos de la colonia. Desde entonces el
+                    trabajo se ha pasado de generación en generación, y cada miembro de la familia ha aprendido el oficio
+                    desde el mostrador.</p>
+                <p>Con los años llegaron nuevas máquinas, más clientes y el reparto a negocios de la zona, pero la forma de
+                    trabajar sigue siendo la misma: preparar la masa temprano, cuidar que la tortilla salga bien cocida y
+                    atender a cada cliente como si fuera de la casa.</p>
+            </div>
+        </div>
+
+        <div class="row g-5 mt-1">
+            <div class="col-lg-6">
+                <h2 class="titulo-seccion">Lo que nos distingue</h2>
+                <p>Muchos de nuestros clientes vienen desde hace décadas, y ahora llegan sus hijos y nietos. Para nosotros
+                    eso es lo más importante, porque significa que la tortilla sabe igual que siempre. Por eso seguimos
+                    cuidando cada paso, desde la nixtamalización del maíz hasta el empaque.</p>
+            </div>
+            <div class="col-lg-6">
+                <!-- Componente 2: Accordion -->
+                <div class="accordion" id="acordeonHistoria">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#etapa1" aria-expanded="true" aria-controls="etapa1">
+                                Los inicios
+                            </button>
+                        </h2>
+                        <div id="etapa1" class="accordion-collapse collapse show" data-bs-parent="#acordeonHistoria">
+                            <div class="accordion-body">
+                                Un local pequeño, una máquina y la familia trabajando desde muy temprano para tener lista la
+                                tortilla del desayuno.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etapa2" aria-expanded="false" aria-controls="etapa2">
+                                El crecimiento
+                            </button>
+                        </h2>
+                        <div id="etapa2" class="accordion-collapse collapse" data-bs-parent="#acordeonHistoria">
+                            <div class="accordion-body">
+                                Llegaron más clientes y se empezó a surtir a fondas, taquerías y tiendas de abarrotes de la
+                                zona, lo que hizo necesario el servicio de reparto.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etapa3" aria-expanded="false" aria-controls="etapa3">
+                                Hoy
+                            </button>
+                        </h2>
+                        <div id="etapa3" class="accordion-collapse collapse" data-bs-parent="#acordeonHistoria">
+                            <div class="accordion-body">
+                                Seguimos siendo un negocio familiar, y ahora buscamos usar la tecnología para llevar mejor el
+                                control de pedidos, inventario y reparto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container d-md-flex justify-content-between text-center text-md-start">
+            <span><strong>Tortillería Peña</strong> &middot; Guadalupe, Nuevo León</span>
+            <span>Tortillas hechas a diario desde 1974</span>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap v5.3.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
