@@ -1,0 +1,260 @@
+/* Estilos del sitio de Tortilleria Peña */
+:root {
+    --maiz: #e9a91f;
+    --maiz-claro: #fbecc4;
+    --cafe: #3a2614;
+    --barro: #a0522d;
+    --crema: #fdf8ef;
+}
+
+body {
+    background-color: var(--crema);
+    color: var(--cafe);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ---------- Menu ---------- */
+.menu {
+    background-color: var(--cafe);
+}
+
+.menu .navbar-brand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    color: var(--maiz);
+    letter-spacing: .5px;
+}
+
+.menu .navbar-brand small {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: .7rem;
+    color: #d9c6a8;
+    font-weight: 400;
+    display: block;
+    line-height: 1;
+}
+
+.menu .nav-link {
+    color: #eadbc4;
+    border-radius: 6px;
+    padding-left: .9rem !important;
+    padding-right: .9rem !important;
+}
+
+.menu .nav-link:hover {
+    color: var(--maiz);
+}
+
+/* Pagina en la que se encuentra el usuario */
+.menu .nav-link.active {
+    background-color: var(--maiz);
+    color: var(--cafe) !important;
+    font-weight: 600;
+}
+
+/* ---------- Portada (index) ---------- */
+.portada {
+    position: relative;
+    min-height: 78vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+/* La imagen ocupa todo el fondo de la portada */
+.portada .fondo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(30, 18, 8, .92) 0%, rgba(30, 18, 8, .7) 45%, rgba(30, 18, 8, .1) 80%);
+}
+
+.portada .container {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+
+.texto-grande {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: .5rem;
+}
+
+.texto-grande span {
+    color: var(--maiz);
+}
+
+.portada .lead {
+    max-width: 640px;
+    font-size: 1.25rem;
+}
+
+.sello {
+    display: inline-block;
+    border: 2px solid var(--maiz);
+    color: var(--maiz);
+    border-radius: 50px;
+    padding: .25rem 1rem;
+    font-size: .85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Encabezado de las paginas internas ---------- */
+.encabezado {
+    background-color: var(--maiz-claro);
+    border-bottom: 4px solid var(--maiz);
+    padding: 2.5rem 0 2rem 0;
+    margin-bottom: 2.5rem;
+}
+
+.encabezado h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+}
+
+h2.titulo-seccion {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: justify;
+}
+
+/* ---------- Pagina 1 ---------- */
+.carousel-item img {
+    height: 430px;
+    object-fit: cover;
+}
+
+.carousel {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(58, 38, 20, .2);
+}
+
+.carousel-caption {
+    background-color: rgba(30, 18, 8, .6);
+    border-radius: 10px;
+    left: 10%;
+    right: 10%;
+    bottom: 1.5rem;
+    padding: .6rem 1rem;
+}
+
+.anio {
+    font-family: Georgia, serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--barro);
+    line-height: 1;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--maiz-claro);
+    color: var(--cafe);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 .2rem rgba(233, 169, 31, .35);
+}
+
+/* ---------- Pagina 2 ---------- */
+.tarjeta-producto {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(58, 38, 20, .12);
+    transition: transform .2s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-producto img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.btn-maiz {
+    background-color: var(--maiz);
+    color: var(--cafe);
+    font-weight: 600;
+    border: none;
+}
+
+.btn-maiz:hover,
+.btn-maiz:focus {
+    background-color: #d4960f;
+    color: var(--cafe);
+}
+
+.bg-barro {
+    background-color: var(--barro) !important;
+}
+
+/* ---------- Pagina 3 ---------- */
+.foto-redonda {
+    border-radius: 14px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(58, 38, 20, .15);
+}
+
+.paso {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: var(--maiz);
+    color: var(--cafe);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nav-tabs .nav-link {
+    color: var(--cafe);
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+    border-top: 3px solid var(--maiz);
+}
+
+.card-pedido {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(58, 38, 20, .12);
+}
+
+/* ---------- Pie ---------- */
+footer {
+    background-color: var(--cafe);
+    color: #cdb999;
+    font-size: .9rem;
+}
+
+footer strong {
+    color: var(--maiz);
+}

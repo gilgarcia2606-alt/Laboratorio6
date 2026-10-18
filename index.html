@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Tortillería Peña</title>
+    <!-- Bootstrap v5.3.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome v6.6.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-dark menu sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tortillería Peña<small>Desde 1974</small></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-md-1">
+                    <li class="nav-item"><a class="nav-link" href="#">Página 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Página 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Página 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portada con imagen y texto grande -->
+    <header class="portada">
+        <img src="img/portada.jpg" alt="Local de Tortillería Peña" class="fondo">
+        <div class="container">
+            <span class="sello">Negocio familiar</span>
+            <h1 class="texto-grande">Tortillería <span>Peña</span></h1>
+            <p class="lead">Tortillas de maíz recién hechas en Guadalupe, Nuevo León, desde 1974.</p>
+            <a href="#" class="btn btn-maiz btn-lg mt-2">Ver productos</a>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <i class="fa-solid fa-wheat-awn fa-2x mb-2" style="color: var(--barro)"></i>
+                <h5>Maíz del día</h5>
+                <p class="text-center mb-0">La masa se prepara cada mañana para que la tortilla salga fresca.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-people-roof fa-2x mb-2" style="color: var(--barro)"></i>
+                <h5>Atención de familia</h5>
+                <p class="text-center mb-0">Más de cincuenta años atendiendo a los vecinos de la colonia.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-motorcycle fa-2x mb-2" style="color: var(--barro)"></i>
+                <h5>Reparto a negocios</h5>
+                <p class="text-center mb-0">Llevamos tortilla a fondas, taquerías y tiendas de la zona.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container d-md-flex justify-content-between text-center text-md-start">
+            <span><strong>Tortillería Peña</strong> &middot; Guadalupe, Nuevo León</span>
+            <span>Tortillas hechas a diario desde 1974</span>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap v5.3.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
